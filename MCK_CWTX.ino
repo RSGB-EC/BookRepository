@@ -28,7 +28,7 @@ const int CLOCK = D2;
 
 // CW Keying Pins
 // output is to the shaping circuit
-const int CWKeyOutput = A6;x`
+const int CWKeyOutput = A6;
 // input is from CW Key jack
 const int CWKeyInput = A7;
 

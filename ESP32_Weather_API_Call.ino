@@ -2,11 +2,11 @@
 #include <HTTPClient.h>
 #include <Arduino_JSON.h>
 
-const char* ssid = "G0MGX ";
-const char* password = "CFR1PVKD";
+const char* ssid = "";
+const char* password = "Bananas";
 
 // Your Domain name with URL path or IP address with path
-String openWeatherMapApiKey = "308aa2fcad7fe2213fe6472fbddc7d70";
+String openWeatherMapApiKey = "YourAPIKeyHere";
 
 // Replace with your country code and city
 String city = "Derby";

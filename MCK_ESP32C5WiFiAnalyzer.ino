@@ -1,6 +1,7 @@
 /*******************************************************************************
  * ESP32-C5 WiFi Analyzer
  * Requires ESP32-C5 board
+ * Modified by G0MGX for the WaveShare ESP32-C5 module
  ******************************************************************************/
 #if CONFIG_SOC_WIFI_SUPPORT_5G
 

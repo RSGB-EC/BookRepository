@@ -6,8 +6,6 @@
 SPISettings spisettings(1000000, MSBFIRST, SPI_MODE0);
 
 int noReg = 13;
-int MyMOSI = MOSI;
-int mySCK = SCK;
 
 uint32_t registers[13] =  {0x2002C0, 0x0000001, 0x1F42, 0x3, 0x3000A784, 0x800025, 0x15220476, 0x120000E7,
 0x102D0428, 0x302FCC9, 0xC03EBA, 0x61300B, 0x1041C} ; // 2200MHz 100Mhz ref clock
@@ -30,19 +28,6 @@ void SetADF5350()  // bung the data into the ADF4351
     WriteRegister32(registers[i]);
 }
 
-void SerialPrintRegisters()
-{   
-    for (int i = 0; i <=noReg-1; i++)
-    {
-      Serial.print("Register ");
-      Serial.print(i);
-      Serial.print(" ");
-      Serial.print(registers[i],HEX);
-      Serial.print(" ");
-    }
-  Serial.println();
-}
-
 void setup() 
 {
   Serial.begin (9600);
@@ -59,5 +44,4 @@ void loop()
   delay (2000);
 
   SetADF5350();  
-  SerialPrintRegisters();
 }

@@ -23,7 +23,7 @@ void WriteRegister32(const uint32_t value)
   digitalWrite(ADF5355_LE, LOW);
 }
 
-void SetADF5355()  // bung the data into the ADF4351
+void SetADF5355()  // bung the data into the ADF5355
 { for (int i = noReg-1; i >= 0; i--)
     WriteRegister32(registers[i]);
 }

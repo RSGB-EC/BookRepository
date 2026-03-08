@@ -23,9 +23,9 @@ void loop() {
 
   float TotalTime = (EndTime - StartTime)/1000;
   SerialUSB.print("Calculation Took ");
-  SerialUSB.print(TotalTime);
+  SerialUSB.print(TotalTime,10);
   SerialUSB.print(" Seconds, and Pi is " );
-  SerialUSB.print(pi);
+  SerialUSB.print(pi,10);
   SerialUSB.println(" ish");
 
 }
